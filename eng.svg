@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="1678 22 40.957 40.957">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #95989a;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        fill: #95989a;
+        font-size: 17px;
+        font-family: HelveticaNeue-Bold, Helvetica Neue;
+        font-weight: 700;
+      }
+
+      .cls-3 {
+        stroke: none;
+      }
+
+      .cls-4 {
+        fill: none;
+      }
+    </style>
+  </defs>
+  <g id="Group_8" data-name="Group 8" transform="translate(1678 22)">
+    <g id="Ellipse_1" data-name="Ellipse 1" class="cls-1" transform="translate(0 0)">
+      <ellipse class="cls-3" cx="20.478" cy="20.478" rx="20.478" ry="20.478"/>
+      <ellipse class="cls-4" cx="20.478" cy="20.478" rx="18.978" ry="18.978"/>
+    </g>
+    <text id="EN" class="cls-2" transform="translate(5.12 9.386)"><tspan x="3.552" y="17">EN</tspan></text>
+  </g>
+</svg>
