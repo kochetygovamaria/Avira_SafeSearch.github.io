@@ -23,6 +23,11 @@ color:darkgrey;
     margin-top: 15px;
     
   }
+  .mdl-tabs__tab.mytab{
+    border-bottom:none !important;
+    padding: 0 0px;
+  }
+  
   
   .mdh-expandable-search form {
     max-width: 600px;
