@@ -27,12 +27,27 @@ color:darkgrey;
     border-bottom:none !important;
     padding: 0 0px;
   }
-  
-  
+  .search{
+    right:20px !important;
+    margin-top: 8px;
+  }
+  .mdl-navigation.icons{
+margin-top: 34px;
+  }
   .mdh-expandable-search form {
     max-width: 600px;
   }
-  
+  .demo-card-wide.mdl-card {
+    width: 512px;
+  }
+  .demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background: url('../assets/demos/welcome_card.jpg') center / cover;
+  }
+  .demo-card-wide > .mdl-card__menu {
+    color: #fff;
+  }
   .mdh-expandable-search,
   .mdh-expandable-search form,
   .mdh-expandable-search input {
@@ -42,7 +57,20 @@ color:darkgrey;
     -ms-flex-positive: 1;
     flex-grow: 1;
   }
-  
+  .mdl-grid.searchResult{
+    padding: 0px;
+  }
+  .mdl-cell.mdl-cell--6-col.searchResult{
+    margin: 0px;
+  }
+  table{
+    border-collapse:initial;
+    text-align: initial;
+    /* text-align: left; */
+  }
+  .linkSearch{
+    text-decoration: none !important;
+  }
   .mdh-expandable-search,
   .mdh-expandable-search form {
     /* Cross browser inline-flex */
