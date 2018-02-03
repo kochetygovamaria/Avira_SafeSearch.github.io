@@ -119,6 +119,12 @@ margin-top: 34px;
      color:    grey;
      opacity:  1; /* Firefox gives the placeholder a reduced opacity so we have to increase it */
   }
+  .navbarFooter{
+    color:#2e2e2e;
+  }
+  .navbarFooter1{
+    color:#24a21e;
+  }
   .mdh-expandable-search input:-ms-input-placeholder { /* Internet Explorer 10+ */
      color:   grey;
   }
