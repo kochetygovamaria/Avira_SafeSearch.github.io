@@ -115,7 +115,7 @@ margin-right: 2%;
     padding: 0px 35px 0px 30px;
     height: 40px;
     line-height: 40px; /* TODO: This was recommended for cross browser compatability of input height, check if its actually needed in modern browsers */
-    border: 1px solid rgba(0,0,0,0.15);
+    border: 1px solid rgba(104, 103, 103, 0.15);
     box-shadow: 0 2px 3px rgba(0,0,0,0.06);
     border-radius: 3px 3px 3px 3px;
     -moz-border-radius: 5px 5px 5px 5px;
