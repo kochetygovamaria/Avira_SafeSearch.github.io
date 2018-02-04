@@ -170,4 +170,7 @@ margin-right: 2%;
     .tabMenuSmallDevices{
         display:block;
       }
+      .infoCard{
+        margin-left: 15px !important;
+      }
 }
