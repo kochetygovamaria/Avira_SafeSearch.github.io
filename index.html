@@ -29,7 +29,8 @@
            
             <form action="#">
                  
-              <input  class="mdl-textfield__input seachInput"  pattern="-?[0-9]*(\.[0-9]+)?" type="text"  size="1"  placeholder="Search" style="color:black;">
+              <input  class="mdl-textfield__input seachInput"  pattern="-?[0-9]*(\.[0-9]+)?" type="text"  size="1"  placeholder="Search" style="color:black; font-weight: 500;
+              font-size: 14px;">
               
               <i class="material-icons search">search</i>
               
@@ -40,7 +41,7 @@
 
                 <nav class="mdl-navigation icons">
                     <a class="mdl-navigation__link "  id="language" href="#" style="height:60%;"> <img  class="mdl-navigation__link " src="eng.svg" alt="language" style="height:60%;" /></a> 
-                    <a class="mdl-navigation__link"  href="#"  id="feedback" style="height:60%;">   <img  class="mdl-navigation__link" src="feedback.svg" alt="language" style="height:60%;" /></a>
+                  <!--  <a class="mdl-navigation__link"  href="#"  id="feedback" style="height:60%;">   <img  class="mdl-navigation__link" src="feedback.svg" alt="language" style="height:60%;" /></a> -->
                         <a class="mdl-navigation__link" href="#"  id="menu" style="height:45%;">   <img  class="mdl-navigation__link" src="menu.svg" alt="language" style="height:45%;" /></a>
                         
                       </nav>
@@ -54,11 +55,11 @@
                           <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
                       </ul>
 
-                      <ul for="feedback" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                    <!--  <ul for="feedback" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
                           <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
                           <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
                           <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
-                      </ul>
+                      </ul> -->
 
                       <ul for="menu" class="mdl-menu mdl-menu--bottom-right mdl-js-menu">
                           <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
@@ -66,7 +67,15 @@
                           <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
                       </ul>
 
-       
+                      <div class="mdl-layout__drawer">
+                          <span class="mdl-layout-title">Title</span>
+                          <nav class="mdl-navigation">
+                            <a class="mdl-navigation__link" href="">Link</a>
+                            <a class="mdl-navigation__link" href="">Link</a>
+                            <a class="mdl-navigation__link" href="">Link</a>
+                            <a class="mdl-navigation__link" href="">Link</a>
+                          </nav>
+                        </div>
           
               
          
@@ -88,10 +97,13 @@
        
       </header>
   <main>
-      <br>
-        <div class="tabMenu">
-                <div class="" >
-                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:100px; margin-right:15px; font-weight: 500;
+ 
+      <div class="mdl-grid searchResult" style="margin:auto 0;">
+          <div class="mdl-cell mdl-cell--5-col  mdl-cell--1-offset-desktop searchResult">
+              
+                  
+                  
+                  <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:100px; margin-right:15px; font-weight: 500;
                     font-size: 12px;
                     text-transform: uppercase;
                     color: rgba(0,0,0,.54);">
@@ -109,7 +121,7 @@
                         font-weight: 500;
                         font-size: 12px;
                         text-transform: uppercase;
-                        color: rgba(0,0,0,.54);"><img src=""/> Country</label>
+                        color: rgba(0,0,0,.54);"><img src=""/> Region</label>
                         <ul for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
                             <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdata(this)" style="font-weight:500;
                             font-size: 12px;
@@ -158,8 +170,15 @@
                             color: rgba(0,0,0,.54);" id="lmonth" onclick="checkdataTime(this)">Last Month</li>
                         </ul>
                     </div>
+
+
+
                    
+                    <h6 style="color:#26a720; margin-top:0;"><img src="safe.png" height="22" width="24"/>About 23,600,000 safe results</h6> 
                 </div>
+        </div>
+       
+       
         <div>
           <script>
               function checkdata(obj)
@@ -175,20 +194,98 @@
 
     } 
           </script>
-          <br>
-               <h6 style="color:#26a720; margin-top:0;"><img src="safe.png" height="22" width="24"/>About 23,600,000 safe results</h6> 
-        </div>
-        <div class="mdl-grid searchResult">
-          <div class="mdl-cell mdl-cell--6-col searchResult">
+          
+        <div class="mdl-grid searchResult" style="margin:auto 0;">
+          <div class="mdl-cell mdl-cell--5-col  mdl-cell--1-offset-desktop searchResult">
             <div class="result__body links_main links_deep" style="margin-bottom:5%;">
              
               <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5>  <h7 style="color:#26a720;">Ad</h7>
-              
+                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5> 
                </a>
   
          
             <div >Discover a range of award-winning security, privacy &amp; performance tools for all devices. •Antivirus • VPN • System Speedup • Mobile &amp; more. Download now
+
+            </div>
+            <div >
+              <div><span >
+                  <span class="AddBtn">Ad</span>
+                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
+                <img height="16" width="16" src="avira.png" >
+              </a></span>
+                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
+                  <span> https://www.avira.com</span>
+                 
+                </a>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
+             
+              <a class="linkSearch"  href="https://www.avira.com/">
+                <h5 style="color:#043672; display:inline;">Avira - Wikipedia.</h5>  
+              
+               </a>
+  
+         
+            <div >Avira - offers the following security products and tools for Microsoft Windows: Free Antivirus The free edition antivirus/anti-spyware, for non-commercial use ...
+            </div>
+            <div >
+              <div><span >
+                  <span class="AddBtn">Ad</span>
+                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
+                <img height="16" width="16" src="avira.png" >
+              </a></span>
+                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
+                  <span> https://www.avira.com</span>
+                 
+                </a>
+              </div>
+             
+            </div>
+          </div>
+
+          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
+             
+              <a class="linkSearch"  href="https://www.avira.com/">
+                <h5 style="color:#043672; display:inline;">Avira -  Free Antivirus - Download</h5> 
+              
+               </a>
+  
+
+
+
+               <div class="result__snippet"></div>
+         
+            <div >Avira Free Antivirus, free and safe download. Avira Free Antivirus latest version: A free anti-virus, anti-malware and anti-ransomware program. Avira Free Antivirus ...
+
+            </div>
+            <div >
+              <div><span>
+                  <span class="AddBtn">Ad</span>
+                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
+                <img height="16" width="16" src="avira.png" >
+              </a></span>
+                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
+                  <span> https://www.avira.com</span>
+                 
+                </a>
+              </div>
+             
+            </div>
+          </div>
+          <hr>
+          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
+             
+              <a class="linkSearch"  href="https://www.avira.com/">
+                <h5 style="color:#043672; display:inline;">Avira Antivirus Security - Android Apps on Google Play</h5> 
+              
+               </a>
+  
+         
+            <div >You've found the best free antivirus, mobile security, privacy, and anti-theft app for Android: Avira Antivirus Security. Your photos, contacts, emails ...
 
             </div>
             <div >
@@ -208,12 +305,12 @@
           <div class="result__body links_main links_deep" style="margin-bottom:5%;">
              
               <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5>  <h7 style="color:#26a720;">Ad</h7>
+                <h5 style="color:#043672; display:inline;">Avira - Antivirus (2017) Review &amp; Rating | PCMag.com</h5> 
               
                </a>
   
          
-            <div >Discover a range of award-winning security, privacy &amp; performance tools for all devices. •Antivirus • VPN • System Speedup • Mobile &amp; more. Download now
+            <div >The free Avira Antivirus gets excellent ratings from the independent labs, but in testing its scans were slow, and its browser protection only works with ...
 
             </div>
             <div >
@@ -233,82 +330,7 @@
           <div class="result__body links_main links_deep" style="margin-bottom:5%;">
              
               <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5>  <h7 style="color:#26a720;">Ad</h7>
-              
-               </a>
-  
-         
-            <div >Discover a range of award-winning security, privacy &amp; performance tools for all devices. •Antivirus • VPN • System Speedup • Mobile &amp; more. Download now
-
-            </div>
-            <div >
-              <div><span >
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5>  <h7 style="color:#26a720;">Ad</h7>
-              
-               </a>
-  
-         
-            <div >Discover a range of award-winning security, privacy &amp; performance tools for all devices. •Antivirus • VPN • System Speedup • Mobile &amp; more. Download now
-
-            </div>
-            <div >
-              <div><span >
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5>  <h7 style="color:#26a720;">Ad</h7>
-              
-               </a>
-  
-         
-            <div >Discover a range of award-winning security, privacy &amp; performance tools for all devices. •Antivirus • VPN • System Speedup • Mobile &amp; more. Download now
-
-            </div>
-            <div >
-              <div><span >
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5>  <h7 style="color:#26a720;">Ad</h7>
+                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5> 
               
                </a>
   
@@ -332,7 +354,7 @@
           
          </div>
           
-          <div class="mdl-cell mdl-cell--4-col"><div class="demo-card-wide mdl-card mdl-shadow--2dp">
+          <div class="mdl-cell mdl-cell--5-col mdl-cell--1-offset-desktop"><div class="demo-card-wide mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
               <h2 class="mdl-card__title-text">Avira</h2>
             </div>

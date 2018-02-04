@@ -23,18 +23,31 @@ color:darkgrey;
     margin-top: 15px;
     
   }
-  .mdl-tabs__tab.mytab{
-    border-bottom:none !important;
-    padding: 0 0px;
-  }
+ 
+  .demo-card-wide.mdl-card {
+     width: 100% !important; 
+}
   .search{
     right:20px !important;
     margin-top: 8px;
   }
+
   .mdl-navigation.icons{
 margin-top: 34px;
 margin-right: 2%;
   }
+  .AddBtn {
+    margin-right:7px;
+    background-color: #26a720;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    font-size: 11px;
+    border: 1px solid #26a720;
+    padding: 3px 10px 3px 10px;
+    line-height: 11px;
+    vertical-align: baseline;
+}
   .mdh-expandable-search form {
     max-width: 600px;
   }
