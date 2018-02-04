@@ -38,17 +38,33 @@
           <div class="mdl-layout-spacer"></div>
 
                 <nav class="mdl-navigation icons">
-                    <a class="mdl-navigation__link "  href="#" style="height:60%;"> <img  class="mdl-navigation__link " src="eng.svg" alt="language" style="height:60%;" /></a> 
-                    <a class="mdl-navigation__link"  href="#"  style="height:60%;">   <img  class="mdl-navigation__link" src="feedback.svg" alt="language" style="height:60%;" /></a>
-                        <a class="mdl-navigation__link" href="#"  style="height:45%;">   <img  class="mdl-navigation__link" src="menu.svg" alt="language" style="height:45%;" /></a>
+                    <a class="mdl-navigation__link "  id="language" href="#" style="height:60%;"> <img  class="mdl-navigation__link " src="eng.svg" alt="language" style="height:60%;" /></a> 
+                    <a class="mdl-navigation__link"  href="#"  id="feedback" style="height:60%;">   <img  class="mdl-navigation__link" src="feedback.svg" alt="language" style="height:60%;" /></a>
+                        <a class="mdl-navigation__link" href="#"  id="menu" style="height:45%;">   <img  class="mdl-navigation__link" src="menu.svg" alt="language" style="height:45%;" /></a>
                         
                       </nav>
+             <script>
              
+             </script>
 
+                      <ul for="language" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
+                          <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
+                          <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
+                      </ul>
 
+                      <ul for="feedback" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
+                          <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
+                          <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
+                      </ul>
 
-         
-         
+                      <ul for="menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                          <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
+                          <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
+                          <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
+                      </ul>
+
        
           
               
