@@ -2,8 +2,11 @@
 {
     background-color:#fcfbf9;
     padding: 0 13px 0 20px !important;
+    min-width: 100px !important;
 }
-
+.backgroundcoloreHeader form{
+  min-width: 100px !important;
+}
 .tabMenu{
     padding-left: 94px  !important;
 }
@@ -143,7 +146,9 @@ margin-right: 2%;
   .mdh-expandable-search input:-ms-input-placeholder { /* Internet Explorer 10+ */
      color:   grey;
   }
-  
+  .tabMenuSmallDevices{
+    display:none;
+  }
   
   /* Bug fix: https://github.com/google/material-design-lite/issues/1078
    * To much padding on the left of header when the menu button is hidden */
@@ -153,6 +158,16 @@ margin-right: 2%;
     }
   }
   @media only screen and (max-device-width: 480px) {
-    .menuTabs{
-      -webkit-justify-content: right;}
+    .tabMenu{
+      display:none;
+    }
+    .NAvmenuIcons{
+      display:none;
+    }
+      .searchLogo{
+        display:none;
+      }
+    .tabMenuSmallDevices{
+        display:block;
+      }
 }
