@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+  <link rel="stylesheet" href="getmdl-select-master/getmdl-select.min.css">
+  <script defer src="getmdl-select-master/getmdl-select.min.js"></script>
 </head>
 <body>
     <!-- Simple header with scrollable tabs. -->
@@ -59,7 +60,7 @@
                           <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
                       </ul>
 
-                      <ul for="menu" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                      <ul for="menu" class="mdl-menu mdl-menu--bottom-right mdl-js-menu">
                           <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
                           <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
                           <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
@@ -90,37 +91,71 @@
       <br>
         <div class="tabMenu">
                 <div class="" >
-                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:150px; margin-right:15px;">
-                        <input type="text" value="" class="mdl-textfield__input" id="sample1" readonly>
-                        <input type="hidden" value="" name="sample1">
-                      
+                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:100px; margin-right:15px; font-weight: 500;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: rgba(0,0,0,.54);">
+                        <input type="text" value="" class="mdl-textfield__input" id="sample1" readonly style=" border-bottom:none;font-weight: 500;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: rgba(0,0,0,.54);">
+                        <input type="hidden" value="" name="sample1" style="  font-weight: 500;
+                        font-size: 12px;
+                        text-transform: uppercase;
+                        color: rgba(0,0,0,.54);">
+                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
                         <label for="sample1" class="mdl-textfield__label " id="selectedCountry" style="
                       
                         font-weight: 500;
-                        font-size: 14px;
+                        font-size: 12px;
                         text-transform: uppercase;
                         color: rgba(0,0,0,.54);"><img src=""/> Country</label>
                         <ul for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                            <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdata(this)"> <img src="flag.svg"  style="height:40%;" alt=""/> USA</li>
-                            <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdata(this)">Germany</li>
-                            <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdata(this)">Russia</li>
+                            <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdata(this)" style="font-weight:500;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: rgba(0,0,0,.54);"> <img src="flag.svg"  style="height:40%;" alt=""/> USA</li>
+                            <li class="mdl-menu__item" data-val="BLR" id="GER"  style="  font-weight: 500;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: rgba(0,0,0,.54);" style="  font-weight: 500;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: rgba(0,0,0,.54);" onclick="checkdata(this)">Germany</li>
+                            <li class="mdl-menu__item" data-val="RUS" id="RUS" style="  font-weight: 500;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: rgba(0,0,0,.54);" onclick="checkdata(this)">Russia</li>
                         </ul>
                     </div>
              
-                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:150px; margin-right:15px;">
-                        <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly>
+                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:100px; margin-right:15px;   font-weight: 500;
+                    font-size: 12px;
+                    text-transform: uppercase;
+                    color: rgba(0,0,0,.54);">
+                        <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly style=" border-bottom:none;">
                         <input type="hidden" value="" name="sample2">
-                      
+                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
+
                         <label for="sample2" class="mdl-textfield__label " id="selectedPeriod" style="
                       
                         font-weight: 500;
-                        font-size: 14px;
+                        font-size: 12px;
                         text-transform: uppercase;
                         color: rgba(0,0,0,.54);"><img src=""/>Period</label>
                         <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                            <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
-                            <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
-                            <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
+                            <li class="mdl-menu__item" data-val="any" style="  font-weight: 500;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: rgba(0,0,0,.54);" id="any" onclick="checkdataTime(this)">Any time</li>
+                            <li class="mdl-menu__item" data-val="lweek" style="  font-weight: 500;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: rgba(0,0,0,.54);" id="lweek" onclick="checkdataTime(this)">Last week</li>
+                            <li class="mdl-menu__item" data-val="lmonth" style="  font-weight: 500;
+                            font-size: 12px;
+                            text-transform: uppercase;
+                            color: rgba(0,0,0,.54);" id="lmonth" onclick="checkdataTime(this)">Last Month</li>
                         </ul>
                     </div>
                    
