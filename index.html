@@ -72,13 +72,48 @@
       </header>
   <main>
       <br>
-        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect tabMenu">
-                <div class="mdl-tabs__tab-bar" style="-webkit-justify-content: left; border-bottom:none;">
-                    <a href="" style="height:80%;" class="mdl-tabs__tab mytab"><img src="flag.svg"  style="height:60%;" alt=""/> USA  </a><i class="material-icons" style="margin-top:13px;padding-right:10px;">arrow_drop_down</i>
-                    <a href="#lannisters-panel" class="mdl-tabs__tab mytab">Any Time </a><i class="material-icons" style="margin-top:13px;padding-right:10px;">arrow_drop_down</i>
+        <div class="tabMenu">
+                <div class="" >
+                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:150px; margin-right:15px;">
+                        <input type="text" value="" class="mdl-textfield__input" id="sample1" readonly>
+                        <input type="hidden" value="" name="sample1">
+                      
+                        <label for="sample1" class="mdl-textfield__label " id="selectedCountry" style="color:black"><img src=""/> Country</label>
+                        <ul for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdata(this)"> <img src="flag.svg"  style="height:40%;" alt=""/> USA</li>
+                            <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdata(this)">Germany</li>
+                            <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdata(this)">Russia</li>
+                        </ul>
+                    </div>
+             
+                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:150px; margin-right:15px;">
+                        <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly>
+                        <input type="hidden" value="" name="sample2">
+                      
+                        <label for="sample2" class="mdl-textfield__label " id="selectedPeriod" style="color:black"><img src=""/>Period</label>
+                        <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
+                            <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
+                            <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
+                            <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
+                        </ul>
+                    </div>
                    
                 </div>
         <div>
+          <script>
+              function checkdata(obj)
+    {
+
+        document.getElementById('selectedCountry').innerHTML =obj.innerHTML
+
+    } 
+    function checkdataTime(obj)
+    {
+
+        document.getElementById('selectedPeriod').innerHTML =obj.innerHTML
+
+    } 
+          </script>
           <br>
                <h6 style="color:#26a720; margin-top:0;"><img src="safe.png" height="22" width="24"/>About 23,600,000 safe results</h6> 
         </div>
