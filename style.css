@@ -50,6 +50,7 @@ margin-right: 2%;
 }
   .mdh-expandable-search form {
     max-width: 600px;
+    min-width:100px;
   }
   .demo-card-wide.mdl-card {
     width: 512px;
@@ -151,4 +152,7 @@ margin-right: 2%;
       padding: 0 40px 0 40px;
     }
   }
-  
+  @media only screen and (max-device-width: 480px) {
+    .menuTabs{
+      -webkit-justify-content: right;}
+}
