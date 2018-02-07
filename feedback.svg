@@ -1,23 +1,47 @@
-<svg id="Group_18" data-name="Group 18" xmlns="http://www.w3.org/2000/svg" viewBox="1757.634 23.56 42.638 37.224">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: #979797;
-      }
-
-      .cls-1, .cls-2 {
-        stroke: #969696;
-        stroke-miterlimit: 10;
-        stroke-width: 2px;
-      }
-
-      .cls-2 {
-        fill: #fbfbfb;
-      }
-    </style>
-  </defs>
-  <g id="Group_1" data-name="Group 1" transform="translate(1758.634 24.56)">
-    <path id="Path_1" data-name="Path 1" class="cls-1" d="M28.878,33.531a25.8,25.8,0,0,0,2.95-.181,2.13,2.13,0,0,1,1.686.542,15.763,15.763,0,0,0,6.2,3.974,15.636,15.636,0,0,1-1.686-5,2.047,2.047,0,0,1,.963-1.987c4.455-2.589,6.984-6.5,6.984-10.716C45.976,12.76,38.33,6.8,28.938,6.8S11.9,12.82,11.9,20.165s7.586,13.365,16.978,13.365Z" transform="translate(-5.338 -3.308)"/>
-    <path id="Path_2" data-name="Path 2" class="cls-2" d="M18.038,27.791a25.8,25.8,0,0,1-2.95-.181,2.13,2.13,0,0,0-1.686.542,15.763,15.763,0,0,1-6.2,3.974,15.636,15.636,0,0,0,1.686-5,2.047,2.047,0,0,0-.963-1.987C3.529,22.553,1,18.64,1,14.365,1,7.02,8.646,1,18.038,1S35.076,7.02,35.076,14.365,27.43,27.791,18.038,27.791Z" transform="translate(-1 -1)"/>
-  </g>
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 513.52 513.52" style="enable-background:new 0 0 513.52 513.52;" xml:space="preserve" width="512px" height="512px">
+<g>
+	<g>
+		<g>
+			<path d="M421.88,0L192.52,229.408L162.36,350.08l120.688-30.16L417.08,185.872V383.36h-224v61.84l-74.208-61.84H33.08v-288h128     v-32h-160v352h106.208l117.792,98.16v-98.16h224V153.872l63.36-63.312L421.88,0z M206.328,306.096l9.312-37.216l27.92,27.92     L206.328,306.096z M274.856,282.848l-45.248-45.264L376.68,90.56l45.2,45.2L274.856,282.848z M444.568,113.136l-45.264-45.248     l22.576-22.64l45.312,45.312L444.568,113.136z" fill="#FFFFFF"/>
+			<rect x="65.08" y="127.36" width="160" height="32" fill="#FFFFFF"/>
+			<rect x="65.08" y="191.36" width="96" height="32" fill="#FFFFFF"/>
+			<rect x="65.08" y="255.36" width="64" height="32" fill="#FFFFFF"/>
+			<rect x="65.08" y="319.36" width="64" height="32" fill="#FFFFFF"/>
+			<rect x="257.08" y="63.36" width="32" height="32" fill="#FFFFFF"/>
+			<rect x="193.08" y="63.36" width="32" height="32" fill="#FFFFFF"/>
+		</g>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
 </svg>
