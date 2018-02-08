@@ -111,7 +111,9 @@ color:darkgrey;
   position: fixed;
   bottom: 15px;
   right: 20px;
-  z-index: 1;
+  overflow: visible;
+  
+  z-index: 2;
 }
 .demo-drawer.mdl-layout__drawer-right>.mdl-layout-title {
   line-height: 56px;
