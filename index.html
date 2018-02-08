@@ -17,28 +17,37 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="getmdl-select-master/getmdl-select.min.css">
   <script defer src="getmdl-select-master/getmdl-select.min.js"></script>
+<style>
+    html{
+        background-color:#fcfbf9;
+    }
+    .no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+    .se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(Preloader_2.gif) center no-repeat #fff;
+}
+</style>
+<script>
+       $(window).on('load', function(){
+              // Animate loader off screen
+          function show_popup(){
+              $(".se-pre-con").fadeOut("slow");
+          };
+          window.setTimeout( show_popup, 1000 );
+          });
+      </script>
 </head>
 <body>
-    <!-- Simple header with scrollable tabs. -->
-    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-      <header class="mdl-layout__header backgroundcoloreHeader">
-        <div class="mdl-layout__header-row backgroundcoloreHeader">
-          <!-- Title -->
-          <img src="logo.svg" alt="logo"  class="searchLogo" style="height:70%; margin-top:15px;"/>
-         
-          <div class="mdh-expandable-search ">
-           
-            <form action="#">
-                 
-              <input  class="mdl-textfield__input seachInput"  pattern="-?[0-9]*(\.[0-9]+)?" type="text"  size="1"  placeholder="Search" style="color:black; font-weight: 500;
-              font-size: 14px;">
-              
-              <i class="material-icons search">search</i>
-              
-            </form>
-           
-          </div>
-          <div class="mdl-layout-spacer"></div>
+        <div class="se-pre-con"></div>
+        <header class="mdl-layout__header" style="box-shadow:none;background-color: #fcfbf9">
+                <div class="mdl-layout__header-row backgroundcoloreHeader">
+            <div class="mdl-layout-spacer"></div>
 
                 <nav class="mdl-navigation icons NAvmenuIcons">
                     <a class="mdl-navigation__link "  id="language" href="#" style="height:60%;"> <img  class="mdl-navigation__link " src="eng.svg" alt="language" style="height:60%;" /></a> 
@@ -52,403 +61,88 @@
                           <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">English</li>
                           <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">German</li>
                           <li class="mdl-menu__item" data-val="RUS" id="Sp" onclick="checkdataTime(this)">Spanish</li>
-                      </ul>
-
-                    <!--  <ul for="feedback" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                          <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdataTime(this)">Any time</li>
-                          <li class="mdl-menu__item" data-val="BLR" id="GER" onclick="checkdataTime(this)">Last week</li>
-                          <li class="mdl-menu__item" data-val="RUS" id="RUS" onclick="checkdataTime(this)">Last Month</li>
-                      </ul> -->
-
-                 
-                     
                
-          
-              
-                 
-        </div>
-       
-        <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect tabMenu">
-                <div class="mdl-tabs__tab-bar menuTabs" style="-webkit-justify-content: left;">
-                    <a href="#starks-panel" class="mdl-tabs__tab is-active" style=" color:black;">Web</a>
-                    <a href="#lannisters-panel" class="mdl-tabs__tab">Images</a>
-                    <a href="#targaryens-panel" class="mdl-tabs__tab">Videos</a>
-                    <a href="#starks-panel" class="mdl-tabs__tab ">News</a>
-                    <a href="#lannisters-panel" class="mdl-tabs__tab">Maps</a>
-                </div>
-        
-               
-               
-              </div>
-              <div class="mdl-tabs mdl-js-tabs mdl-js-ripple-effect tabMenuSmallDevices">
-                  <div class="mdl-tabs__tab-bar menuTabs">
-                      <a href="#starks-panel" class="mdl-tabs__tab is-active" style=" color:black; font-size: 9px;">Web</a>
-                      <a href="#lannisters-panel" class="mdl-tabs__tab" style="font-size: 9px;">Images</a>
-                      <a href="#targaryens-panel" class="mdl-tabs__tab" style="font-size: 9px;">Videos</a>
-                      <a href="#starks-panel" class="mdl-tabs__tab " style="font-size: 9px;">News</a>
-                      <a href="#lannisters-panel" class="mdl-tabs__tab" style="font-size: 9px;">Maps</a>
-                      <a href="#lannisters-panel" class="mdl-tabs__tab" style="height:80%; font-size: 9px"><img  class="mdl-navigation__link " src="eng.svg" alt="language" style="height:60%;" /></a>
-  
-                      <a class="mdl-tabs__tab mdl-button mdl-js-button mdl-button--icon mdl-button--notifications" href="#"  id="menu" style="height:80%;font-size: 9px">   <img  class="mdl-navigation__link" src="menu.svg" alt="language" style="height:45%;" /></a>
-                  </div>
-          
-                 
-                 
-                </div>
-        <!-- Tabs -->
-       
-      </header>
-     
-   
-        <div class="demo-drawer mdl-layout__drawer-right">
-           <br>
-            <ul> <img src="avira.png" style="width:9%;" /> <span style="text-transform: uppercase;
-              font-size: 0.85em;">Avira Product</span>
-              <li class="listMenu">Internet Security Suite</li>
-              <li class="listMenu">VPN</li>         
-              <li class="listMenu">Avira System Speedup</li>
-             
-              </ul>
-              <hr>
-              <ul> <span style="text-transform: uppercase;
-                font-size: 0.85em;">Menu</span>
-                <li class="listMenu">Settings</li>
-                <li class="listMenu">About</li>
-                 
-                  </ul>
-                  <hr>
-                  <ul ><span style="text-transform: uppercase;
-                    font-size: 0.85em;">Privacy</span>
-                      <li class="listMenu">Term &amp; Conditions</li>
-                      <li class="listMenu">Help</li>         
-                      
-                      
-                      </ul>
-            </div>
-
-
-
-            <div id="mybutton">
-                <button class="feedback"> <img  class="mdl-navigation__link" src="feedback.svg" alt="language" style="height:60%;" /> Feedback</button>
-                </div>
-  <main lass="mdl-layout__content">
- 
-      <div class="mdl-grid searchResult" style="margin:auto 0;">
-          <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet mdl-cell--12-col-phone   mdl-cell--1-offset-desktop searchResult">
-              
-                  
-                  
-                  <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:100px; margin-right:15px; font-weight: 500;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: rgba(0,0,0,.54);">
-                        <input type="text" value="" class="mdl-textfield__input" id="sample1" readonly style=" border-bottom:none;font-weight: 500;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: rgba(0,0,0,.54);">
-                        <input type="hidden" value="" name="sample1" style="  font-weight: 500;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: rgba(0,0,0,.54);">
-                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-                        <label for="sample1" class="mdl-textfield__label " id="selectedCountry" style="
-                      
-                        font-weight: 500;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: rgba(0,0,0,.54);"><img src=""/> Region</label>
-                        <ul for="sample1" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                            <li class="mdl-menu__item" data-val="USA" id="USA" onclick="checkdata(this)" style="font-weight:500;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            color: rgba(0,0,0,.54);"> <img src="flag.svg"  style="height:40%;" alt=""/> USA</li>
-                            <li class="mdl-menu__item" data-val="BLR" id="GER"  style="  font-weight: 500;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            color: rgba(0,0,0,.54);" style="  font-weight: 500;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            color: rgba(0,0,0,.54);" onclick="checkdata(this)">Germany</li>
-                            <li class="mdl-menu__item" data-val="RUS" id="RUS" style="  font-weight: 500;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            color: rgba(0,0,0,.54);" onclick="checkdata(this)">Russia</li>
                         </ul>
-                    </div>
-             
-                    <div class="mdl-textfield mdl-js-textfield getmdl-select" style="width:100px; margin-right:15px;   font-weight: 500;
-                    font-size: 12px;
-                    text-transform: uppercase;
-                    color: rgba(0,0,0,.54);">
-                        <input type="text" value="" class="mdl-textfield__input" id="sample2" readonly style=" border-bottom:none;">
-                        <input type="hidden" value="" name="sample2">
-                        <i class="mdl-icon-toggle__label material-icons">keyboard_arrow_down</i>
-
-                        <label for="sample2" class="mdl-textfield__label " id="selectedPeriod" style="
-                      
-                        font-weight: 500;
-                        font-size: 12px;
-                        text-transform: uppercase;
-                        color: rgba(0,0,0,.54);"><img src=""/>Period</label>
-                        <ul for="sample2" class="mdl-menu mdl-menu--bottom-left mdl-js-menu">
-                            <li class="mdl-menu__item" data-val="any" style="  font-weight: 500;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            color: rgba(0,0,0,.54);" id="any" onclick="checkdataTime(this)">Any time</li>
-                            <li class="mdl-menu__item" data-val="lweek" style="  font-weight: 500;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            color: rgba(0,0,0,.54);" id="lweek" onclick="checkdataTime(this)">Last week</li>
-                            <li class="mdl-menu__item" data-val="lmonth" style="  font-weight: 500;
-                            font-size: 12px;
-                            text-transform: uppercase;
-                            color: rgba(0,0,0,.54);" id="lmonth" onclick="checkdataTime(this)">Last Month</li>
-                        </ul>
-                    </div>
-
-
-
-                   
-                    <h6 style="color:#26a720; margin-top:0;"><img src="safe.png" height="22" width="24"/>About 23,600,000 safe results</h6> 
-                </div>
-        </div>
-       
-       
-        <div>
-          <script>
-              function checkdata(obj)
-    {
-
-        document.getElementById('selectedCountry').innerHTML =obj.innerHTML
-
-    } 
-    function checkdataTime(obj)
-    {
-
-        document.getElementById('selectedPeriod').innerHTML =obj.innerHTML
-
-    } 
-          </script>
-          
-        <div class="mdl-grid searchResult" style="margin:auto 0;">
-          <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-cell--1-offset-desktop   mdl-cell--order-2-tablet mdl-cell--order-2-phone mdl-cell--order-1-desktop searchResult">
-            <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5> 
-               </a>
-  
-         
-            <div >Discover a range of award-winning security, privacy &amp; performance tools for all devices. •Antivirus • VPN • System Speedup • Mobile &amp; more. Download now
-
-            </div>
-            <div >
-              <div><span >
-                  <span class="AddBtn">Ad</span>
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Wikipedia.</h5>  
-              
-               </a>
-  
-         
-            <div >Avira - offers the following security products and tools for Microsoft Windows: Free Antivirus The free edition antivirus/anti-spyware, for non-commercial use ...
-            </div>
-            <div >
-              <div><span >
-                  <span class="AddBtn">Ad</span>
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira -  Free Antivirus - Download</h5> 
-              
-               </a>
-  
-
-
-
-               <div class="result__snippet"></div>
-         
-            <div >Avira Free Antivirus, free and safe download. Avira Free Antivirus latest version: A free anti-virus, anti-malware and anti-ransomware program. Avira Free Antivirus ...
-
-            </div>
-            <div >
-              <div><span>
-                  <span class="AddBtn">Ad</span>
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-          <hr>
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira Antivirus Security - Android Apps on Google Play</h5> 
-              
-               </a>
-  
-         
-            <div >You've found the best free antivirus, mobile security, privacy, and anti-theft app for Android: Avira Antivirus Security. Your photos, contacts, emails ...
-
-            </div>
-            <div >
-              <div><span >
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Antivirus (2017) Review &amp; Rating | PCMag.com</h5> 
-              
-               </a>
-  
-         
-            <div >The free Avira Antivirus gets excellent ratings from the independent labs, but in testing its scans were slow, and its browser protection only works with ...
-
-            </div>
-            <div >
-              <div><span >
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-
-          <div class="result__body links_main links_deep" style="margin-bottom:5%;">
-             
-              <a class="linkSearch"  href="https://www.avira.com/">
-                <h5 style="color:#043672; display:inline;">Avira - Download Security Software for Windows, Mac, Android ...</h5> 
-              
-               </a>
-  
-         
-            <div >Discover a range of award-winning security, privacy &amp; performance tools for all devices. •Antivirus • VPN • System Speedup • Mobile &amp; more. Download now
-
-            </div>
-            <div >
-              <div><span >
-                <a href="/?q=avira+site:www.avira.com&amp;t=hf" style="text-decoration:none;" >
-                <img height="16" width="16" src="avira.png" >
-              </a></span>
-                <a  href="https://www.avira.com/"  style="text-decoration:none;"> &nbsp;
-                  <span> https://www.avira.com</span>
-                 
-                </a>
-              </div>
-             
-            </div>
-          </div>
-          
-         </div>
-          
-          <div class="mdl-cell mdl-cell--5-col mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-cell--order-1-tablet mdl-cell--order-1-phone mdl-cell--order-2-desktop mdl-cell--1-offset-desktop "><div class="demo-card-wide mdl-card mdl-shadow--2dp infoCard">
-            <div class="mdl-card__title" style="height: 100px; ">
-            <span> <h1 class="mdl-card__title-text"  style="color:black;">Avira</h1></span>   <span> <img src="Avira_Logo.jpg" style="width:30%; float:right;" alt="logo"/></span>
-            </div>
-            <div class="mdl-card__supporting-text" >
-                Avira Operations GmbH &amp; Co. KG is a German multinational security software company that provides antivirus software, Internet Security, Privacy, Identity and Performance tools for computers, smartphones, servers and networks, delivered as both software and cloud-based services.
-                
-            </div>
-            <div class="mdl-card__actions mdl-card--border">
-              <a href="https://www.avira.com" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                More about Avira
-              </a>
-            </div>
-            <div class="mdl-card__menu">
-              <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
-                <i class="material-icons">share</i>
-              </button>
-            </div>
-          </div>
-          </div>
-         
-        </div>
-  </main>
-  <div class="mdl-layout__obfuscator-right"></div>
-  <footer>
-  <table style="border-collapse:collapse;text-align:left;margin:20px auto 20px" id="nav" role="presentation">
-    <tbody>
-    <tr valign="top"><td>
-      
-    </td>
-    <td><a aria-label="Page 2" class="navbarFooter1" style="margin-right:5px;" href="#"> <span class="" ></span>1</a></td>
-      <td><a aria-label="Page 2" class="navbarFooter" style="margin-right:5px;" href="#"> <span class="csb ch" ></span>2</a></td>
-        <td><a aria-label="Page 3" class="navbarFooter" style="margin-right:5px;" href="#"><span class="csb ch" ></span>3</a></td>
-        <td><a aria-label="Page 4" class="navbarFooter" style="margin-right:5px;" href="#"><span class="csb ch"  ></span>4</a></td>
-        <td><a aria-label="Page 5" class="navbarFooter"  style="margin-right:5px;" href="#"><span class="csb ch" ></span>5</a></td>
-        <td><a aria-label="Page 6" class="navbarFooter" style="margin-right:5px;" href="#"><span class="csb ch" ></span>6</a></td>
-        <td><a aria-label="Page 7" class="navbarFooter" style="margin-right:5px;" href="#"><span class="csb ch" ></span>7</a></td>
-        <td><a aria-label="Page 8" class="navbarFooter" style="margin-right:5px;" href="#"><span class="csb ch" ></span>8</a></td>
-        <td><a aria-label="Page 9" class="navbarFooter" style="margin-right:5px;" href="#"><span class="csb ch" ></span>9</a></td>
-        <td><a aria-label="Page 10" class="navbarFooter" style="margin-right:5px;" href="#"><span class="csb ch" ></span>10</a></td>
-        <td><a  href="#" style="margin-right:5px;" id="pnnext" class="navbarFooter" ><span >...</span></a></tb>
-          <td> <a  href="#"  class="navbarFooter1" id="pnnext" ><span style="display:block;margin-left:10px"> Next >></span></a></td>
-      </tr>
-    </tbody>
-  </table>
-</footer>  
 </div>
-  </body>
-  <script>
+            </header>
+            <div class="demo-drawer mdl-layout__drawer-right">
+                    <br>
+                     <ul> <img src="avira.png" style="width:9%;" /> <span style="text-transform: uppercase;
+                       font-size: 0.85em;">Avira Product</span>
+                       <li class="listMenu">Internet Security Suite</li>
+                       <li class="listMenu">VPN</li>         
+                       <li class="listMenu">Avira System Speedup</li>
+                      
+                       </ul>
+                       <hr>
+                       <ul> <span style="text-transform: uppercase;
+                         font-size: 0.85em;">Menu</span>
+                         <li class="listMenu">Settings</li>
+                         <li class="listMenu">About</li>
+                          
+                           </ul>
+                           <hr>
+                           <ul ><span style="text-transform: uppercase;
+                             font-size: 0.85em;">Privacy</span>
+                               <li class="listMenu">Term &amp; Conditions</li>
+                               <li class="listMenu">Help</li>         
+                               
+                               
+                               </ul>
+                     </div>
+<main lass="mdl-layout__content">
+        <div class="mdh-expandable-search" style="width: 100vw !important;">
+            <img src="logo.svg" style="text-align:center;position: absolute; width:7%;
+            top: 38%;
+            left: 50%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%) ;"/>
+           <h2 style="text-align:center;position: absolute;width:100%;
+           top: 45%;
+           left: 50%;
+           margin-right: -50%;
+           transform: translate(-50%, -50%) ; font-family: Kievit-Light,Arial,sans-serif;
+           font-size: 36px;"> Avira SafeSearch</h2>
+                <form action="#" style="position: absolute;width:100%;
+                top: 60%;
+                left: 50%;
+                margin-right: -50%;
+                transform: translate(-50%, -50%) ;" >
+                     
+                  <input  class="mdl-textfield__input seachInput" id="search"  type="text"  size="1"  placeholder="Search" style="color:black; font-weight: 500;
+                  font-size: 14px;">
+                  
+                  <i class="material-icons search">search</i>
+                  
+                </form>
+               
+              </div>
+    </main>
+    <div class="mdl-layout__obfuscator-right"></div>
+    <script>
 
-$( document ).ready(function() {
-  $(".mdl-button--notifications").click(function() {
-  $(".mdl-layout__drawer-right").addClass("active");
-  $(".mdl-layout__obfuscator-right").addClass("ob-active");
-});
+            $( document ).ready(function() {
+              $(".mdl-button--notifications").click(function() {
+              $(".mdl-layout__drawer-right").addClass("active");
+              $(".mdl-layout__obfuscator-right").addClass("ob-active");
+            });
+            
+            $(".mdl-layout__obfuscator-right").click(function() {
+              $(".mdl-layout__drawer-right").removeClass("active");
+              $(".mdl-layout__obfuscator-right").removeClass("ob-active");
+            });
+            
+    
 
-$(".mdl-layout__obfuscator-right").click(function() {
-  $(".mdl-layout__drawer-right").removeClass("active");
-  $(".mdl-layout__obfuscator-right").removeClass("ob-active");
+            });
+
+            var input = document.getElementById("search");
+input.addEventListener("keyup", function(event) {
+    event.preventDefault();
+    if (event.keyCode === 13) {
+        window.location="search.html";
+    }
 });
-});
-  </script>
+              </script>
+              </body>
 </html>
